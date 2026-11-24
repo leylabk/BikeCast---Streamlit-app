@@ -87,11 +87,20 @@ def get_dataset():
 #==========================================
 
 def get_weather(lat, lon, date_time, city_name):
-    api_key_weather = get_api_key()
-    weather_json = get_weather_json(lat, lon, api_key_weather)
-    weather_df = get_weather_df(weather_json, city_name)
-    selected_forecast = select_forecast(date_time, weather_df)
+
+    weather_df = get_weather_forecast(lat, lon, city_name) # Get cached weather forecast
+    selected_forecast = select_forecast(date_time, weather_df) # Select the requested date and time
+
     return selected_forecast
+
+@st.cache_data(ttl=3600)
+def get_weather_forecast(lat, lon, city_name):
+
+    api_key_weather = get_api_key()
+    weather_json = get_weather_json(lat, lon, api_key_weather) # Fetch weather data from API
+    weather_df = get_weather_df(weather_json, city_name) # Convert JSON into DataFrame
+
+    return weather_df
 
 def get_api_key():
     api_key_weather = st.secrets["API_KEY_WEATHER_NEW"] #this uses the toml file with the password, not .env
