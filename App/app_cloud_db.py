@@ -117,7 +117,7 @@ with tab1:
 
         #### Data Sources
         - **Bike-Sharing Data:** Historical bike-sharing records obtained
-        from the [European Bike Sharing Dataset](https://github.com/leylabk/BikeCast---Streamlit-app/tree/main)¹.
+        from the [European Bike Sharing Dataset](https://github.com/tumftm/european-bike-sharing-dataset)¹.
         - **Weather Data:** Weather records collected using the
         [OpenWeather API](https://openweathermap.org/api), including temperature, humidity, wind speed, rainfall,
         and snowfall.
@@ -147,7 +147,7 @@ with tab1:
         or if you want to see the demand for a hypothetical scenario (a sunny summer weekend or a stormy winter night).
 
         #### Our GitHub Repository
-        To learn more about the data and the machine learning models we used, please visit our [GitHub page](https://github.com/leylabk/Streamlit-app-prediction)!
+        To learn more about the data and the machine learning models we used, please visit our [GitHub page](https://github.com/leylabk/BikeCast---Streamlit-app)!
         
         #### Meet the Team
         Interested in learning more about the people behind this project?
