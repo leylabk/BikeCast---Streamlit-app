@@ -236,9 +236,13 @@ with tab3:
             key="automatic_city"
         )
 
+        today = date.today()
+
         selected_date = st.date_input(
             "Select a date",
-            value=date.today(),
+            value=today,
+            min_value=today,
+            max_value=today + timedelta(days=5),
             key="automatic_date"
         )
 
