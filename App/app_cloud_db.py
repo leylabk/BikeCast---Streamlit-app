@@ -57,7 +57,7 @@ with open(BASE_DIR / "catboost_categories_spline.pkl", "rb") as f:
 import base64
 
 
-with open("bike.png", "rb") as image_file:
+with open(BASE_DIR / "bike.png", "rb") as image_file:
     bike_image = base64.b64encode(image_file.read()).decode()
 
 st.markdown(f"""
