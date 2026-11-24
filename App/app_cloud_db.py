@@ -44,13 +44,12 @@ df = get_dataset()
 # Upload models and categories
 BASE_DIR = Path(__file__).parent
 
-print("Directory:", BASE_DIR)
-print("Model exists:", (BASE_DIR / "catboost_model_spline.pkl").exists())
-print("Categories exist:", (BASE_DIR / "catboost_categories_spline.pkl").exists())
-
 with open(BASE_DIR / "catboost_model_spline.pkl", "rb") as f:
     model = pickle.load(f)
 
+with open(BASE_DIR / "catboost_categories_spline.pkl", "rb") as f:
+    model = pickle.load(f)
+    
 import base64
 
 
