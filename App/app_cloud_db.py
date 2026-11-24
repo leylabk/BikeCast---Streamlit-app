@@ -48,7 +48,7 @@ with open(BASE_DIR / "catboost_model_spline.pkl", "rb") as f:
     model = pickle.load(f)
 
 with open(BASE_DIR / "catboost_categories_spline.pkl", "rb") as f:
-    model = pickle.load(f)
+    categories = pickle.load(f)
     
 import base64
 
