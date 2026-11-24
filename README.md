@@ -41,7 +41,7 @@ Bike-sharing records were aggregated to hourly demand and enriched with historic
 ### Data Sources
 
 - **Bike-Sharing Data:** Historical bike-sharing records obtained from the [European Bike Sharing Dataset](https://github.com/tumftm/european-bike-sharing-dataset)¹.
-- **Weather Data:** Weather records collected using the [OpenWeather API](https://openweathermap.org/api), including temperature, humidity, wind speed, rainfall, and snowfall.
+- **Weather Data:** Weather records collected using the [OpenWeather Marketplace](https://openweathermap.org/marketplace), including temperature, humidity, wind speed, rainfall, and snowfall.
 - **Calendar Data:** Working day information generated using a Python library; school break information taken from the [Schulferien website](https://www.schulferien.org/deutschland/ferien/).
 
 ## 📂 Repository Structure
