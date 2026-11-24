@@ -1,14 +1,26 @@
-# Bike Sharing Demand Prediction
+# 🚲 BikeCast – Bike-Sharing Demand Forecasting
+
+An end-to-end machine learning project that predicts hourly bike-sharing demand in Berlin, Cologne, and Dresden based on weather, temporal, and calendar factors.
 
 ## 📌 Project Overview
 
-This project aims to predict bike-sharing demand using machine learning algorithms. It uses CatBoost models and various features, including weather conditions and school breaks, to estimate bike rental demand.
+Accurate demand forecasting can help bike-sharing providers optimize fleet availability, improve resource allocation, and increase customer satisfaction, thus supporting sustainable urban mobility.
+
+We developed and deployed an interactive web application that combines historical bike-sharing data, machine learning, real-time weather forecast integration, and a cloud-hosted database to support data-driven operational planning.
+
 
 ## 🚀 Try the Live App
 
-Want to see the application in action?
+👉 **[Click here to explore BikeCast](https://bikecast-app.streamlit.app/)**
 
-👉 **[Click here to open the application](https://bikecast-app.streamlit.app/)**
+The application offers three main features:
+
+Data Visualization: Explore how weather, time, location, and calendar factors influence bike-sharing demand.
+
+Automatic Prediction: Forecast hourly demand up to five days ahead using weather forecasts retrieved via the OpenWeather API and automatically generated calendar features.
+
+Manual Prediction: Estimate demand for future dates or hypothetical weather and calendar scenarios.
+
 
 ## 📂 Repository Structure
 
