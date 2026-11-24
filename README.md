@@ -15,12 +15,34 @@ We developed and deployed an interactive web application that combines historica
 
 The application offers three main features:
 
-Data Visualization: Explore how weather, time, location, and calendar factors influence bike-sharing demand.
+**Data Visualization**: Explore how weather, time, location, and calendar factors influence bike-sharing demand.
 
-Automatic Prediction: Forecast hourly demand up to five days ahead using weather forecasts retrieved via the OpenWeather API and automatically generated calendar features.
+**Automatic Prediction**: Forecast hourly demand up to five days ahead using weather forecasts retrieved via the OpenWeather API and automatically generated calendar features.
 
-Manual Prediction: Estimate demand for future dates or hypothetical weather and calendar scenarios.
+**Manual Prediction**: Estimate demand for future dates or hypothetical weather and calendar scenarios.
 
+
+## 📊 Data
+
+### Dataset
+
+The model was trained on historical bike-sharing records from Berlin, Cologne, and Dresden covering August 2022 – July 2023, with 1.2 to 2.5 million trips per city.
+
+Bike-sharing records were aggregated to hourly demand and enriched with historical weather and calendar data, resulting in a modeling dataset of approximately 22,000 observations.
+
+**Target of prediction:**
+- Number of bike-sharing trips started per hour.
+
+**Predictor factors:**
+- **Location:** City.
+- **Calendar features:** Month, hour of the day, working day (vs. holiday/weekend), and school holidays (Schulferien vs. regular school periods).
+- **Weather features:** Weather conditions (clouds, clear, rain, snow, mist, drizzle or fog), temperature, humidity, wind speed, rainfall and snowfall during the previous hour.
+
+### Data Sources
+
+- **Bike-Sharing Data:** Historical bike-sharing records obtained from the [European Bike Sharing Dataset](https://github.com/tumftm/european-bike-sharing-dataset)¹.
+- **Weather Data:** Weather records collected using the [OpenWeather API](https://openweathermap.org/api), including temperature, humidity, wind speed, rainfall, and snowfall.
+- **Calendar Data:** Working day information generated using a Python library; school break information taken from the [Schulferien website](https://www.schulferien.org/deutschland/ferien/).
 
 ## 📂 Repository Structure
 
