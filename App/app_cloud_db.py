@@ -117,7 +117,7 @@ with tab1:
 
         #### Data Sources
         - **Bike-Sharing Data:** Historical bike-sharing records obtained
-        from the [European Bike Sharing Dataset](https://github.com/tumftm/european-bike-sharing-dataset)¹.
+        from the [European Bike Sharing Dataset](https://github.com/leylabk/BikeCast---Streamlit-app/tree/main)¹.
         - **Weather Data:** Weather records collected using the
         [OpenWeather API](https://openweathermap.org/api), including temperature, humidity, wind speed, rainfall,
         and snowfall.
