@@ -98,7 +98,7 @@ Before selecting our final model, we tested 6 other ones - you can see their res
 | Category                        | Technologies                         |
 | ------------------------------- | ------------------------------------ |
 | Programming & Data Processing   | Python, Pandas                       |
-| Machine Learning                | CatBoost, Scikit-learn               |
+| Machine Learning                | CatBoost, Scikit-learn, xgboost, lightgbm     |
 | Database                        | SQL, MySQL                           |
 | Cloud Infrastructure            | Railway                              |
 | API Integration                 | OpenWeather API                      |
