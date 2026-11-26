@@ -107,43 +107,80 @@ Before selecting our final model, we tested 6 other ones - you can see their res
 
 ## 📂 Repository Structure
 
-```text
-├── .gitignore
-├── README.md
-├── app_cloud_db.py
-├── bike.png
-├── bikecast_qr.png
-├── catboost_categories_spline.pkl
-├── catboost_model_spline.pkl
-├── functions_cloud_db.py
-├── graphs.py
-├── requirements.txt
-└── school_holidays.py
-```
+### App
 
-## 📄 File Descriptions
+Contains the deployed Streamlit application, trained models, and supporting functions.
 
 | File | Description |
-|---|---|
-| `.gitignore` | Specifies files and directories that Git should ignore. |
-| `README.md` | Contains project documentation and setup instructions. |
-| `app_cloud_db.py` | Main Streamlit application for bike-sharing demand prediction with cloud database integration. |
-| `bike.png` | Contains the bike image used in the application interface. |
-| `bikecast_qr.png` | Contains a QR code that provides quick access to the BikeCast application via GitHub. |
-| `catboost_categories_spline.pkl` | Saved CatBoost model for categorical features. |
-| `catboost_model_spline.pkl` | Saved CatBoost model using spline-based features. |
-| `functions_cloud_db.py` | Contains helper functions for data processing, weather data retrieval, database operations, and predictions. |
-| `graphs.py` | Contains functions for generating and displaying data visualizations. |
-| `requirements.txt` | Lists the Python dependencies required to run the project. |
-| `school_holidays.py` | Contains functionality for handling school holiday information. |
+| --- | --- |
+| `app_cloud_db.py` | Main Streamlit application |
+| `functions_cloud_db.py` | API integration, database operations, feature preparation, and prediction functions |
+| `graphs.py` | Data visualization functions |
+| `school_holidays.py` | School holiday information |
+| `catboost_categories_spline.pkl` | CatBoost model with spline-based hour feature|
+| `catboost_model_spline.pkl` | Categories for CatBoost model |
+| `bike.png` | Application image |
+| `bikecast_qr.png` | QR code linking to the live application |
+
+### Data_Processing_and_Modelling
+
+Contains Jupyter notebooks documenting the data processing, machine learning, and database setup workflows.
+
+| File | Description |
+| --- | --- |
+| `data_preparation_for_github.ipynb` | Data cleaning, hourly aggregation, data integration, and feature engineering |
+| `predictive_modeling.ipynb` | Model training, hyperparameter tuning, model comparison, and performance evaluation |
+| `railway_db_setup.ipynb` | Cloud database setup and data upload to Railway-hosted MySQL |
+
+### images
+
+Contains screenshots and visualizations used in the README.
+
+| File | Description |
+| --- | --- |
+| `bikecast_homepage.png` | Screenshot of the application homepage |
+| `model_comparison.png` | Visualization of machine learning model performance |
+| `.gitkeep` | Git directory placeholder |
+
+### Root Directory
+
+| File | Description |
+| --- | --- |
+| `README.md` | Project overview and documentation |
+| `requirements.txt` | Python dependencies |
+| `.gitignore` | Git exclusion rules |
+
+## ⚠️ Limitations
+
+- The model was trained on historical data from Berlin, Cologne, and Dresden; its performance in other locations has not been validated.
+- OpenWeather only has 3-hour weather forecasts available to the public for free, while hourly forecasts are behind a paywall. This means that our app has access to only one forecast for a 3-hour window, for example, from 09:00 to 12:00, not one forecast for each hour. This reduces the accuracy of the automatic predictions. If you need an accurate prediction for specific known weather conditions, please use the manual prediction option.
+- Unobserved factors, such as major events or changes in mobility patterns, may also influence actual demand.
+
+## 👥 Meet the Team
+
+- **Tatiana Pashkova** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tatiana-pashkova/)
+- **Leyla Bakacak Karabenli** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leyla-bakacak-karabenli/)
+
+This project was developed collaboratively, combining data engineering, machine learning, and web application development.
+
+## 📚 Data Attribution
+
+Historical bike-sharing data: Waldner et al. (2025), *Data-Driven Insights into (E-)Bike-Sharing*, Transportation. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+
+Weather data: [OpenWeather](https://openweathermap.org/).
+Historical weather data were used for model training, while live 
+weather forecasts are retrieved via the OpenWeather API for 
+automatic demand predictions.
+
+
 
 
 
 
 ## 🔐 Configuration
 
-The application may require:
-- Database connection credentials.
-- An OpenWeatherMap API key.
+The application requires:
+- Database connection credentials
+- An OpenWeather API key
+- Purchased historical weather data from OpenWeather Marketplace (our dataset cannot be shared publicly)
 
-For security reasons, sensitive credentials and API keys should never be committed to the GitHub repository.
