@@ -93,6 +93,18 @@ Before selecting our final model, we tested 6 other ones - you can see their res
 6. **Cloud database integration:** Storage and retrieval of processed data using a Railway-hosted MySQL database.
 7. **Application development and deployment:** Interactive Streamlit application integrating the trained model, cloud database, and live weather forecasts.
 
+## 🛠️ Technologies Used
+
+| Category                        | Technologies                         |
+| ------------------------------- | ------------------------------------ |
+| Programming & Data Processing   | Python, Pandas                       |
+| Machine Learning                | CatBoost, Scikit-learn               |
+| Database                        | SQL, MySQL                           |
+| Cloud Infrastructure            | Railway                              |
+| API Integration                 | OpenWeather API                      |
+| Application & Deployment        | Streamlit, Streamlit Community Cloud |
+| Version Control & Collaboration | Git, GitHub                          |
+
 ## 📂 Repository Structure
 
 ```text
@@ -125,16 +137,7 @@ Before selecting our final model, we tested 6 other ones - you can see their res
 | `requirements.txt` | Lists the Python dependencies required to run the project. |
 | `school_holidays.py` | Contains functionality for handling school holiday information. |
 
-## 🛠️ Technologies Used
 
-- Python
-- Streamlit
-- CatBoost
-- Pandas
-- Scikit-learn
-- MySQL
-- Railway (cloud-hosted MySQL database)
-- OpenWeather API
 
 
 ## 🔐 Configuration
