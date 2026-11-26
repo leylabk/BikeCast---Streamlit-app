@@ -1,4 +1,4 @@
-# 🚲 BikeCast – Bike-Sharing Demand Forecasting
+# 🚲 BikeCast – Forecasting of Bike-Sharing Demand 
 
 An end-to-end machine learning project that predicts hourly bike-sharing demand in Berlin, Cologne, and Dresden based on weather, temporal, and calendar factors.
 
