@@ -83,6 +83,16 @@ Before selecting our final model, we tested 6 other ones - you can see their res
   <em>ML model comparison</em>
 </p>
 
+## ⚙️ End-to-End Project Workflow
+
+1. **Data collection:** Integration of historical bike-sharing and weather data.
+2. **Data preprocessing:** Data cleaning, hourly aggregation, and timezone conversion.
+3. **Feature engineering:** Creation of weather categories (clouds, clear, rain, snow, mist, drizzle or fog), calendar factors (working day and school break) and cyclical spline-based representations for hours of the day.
+4. **Exploratory data analysis:** Investigation of bike demand based on month of the year, hour of the day, city, and weather.
+5. **Machine learning:** Model training, comparison, hyperparameter tuning, and performance evaluation.
+6. **Cloud database integration:** Storage and retrieval of processed data using a Railway-hosted MySQL database.
+7. **Application development and deployment:** Interactive Streamlit application integrating the trained model, cloud database, and live weather forecasts.
+
 ## 📂 Repository Structure
 
 ```text
