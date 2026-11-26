@@ -19,7 +19,7 @@ To help solve this problem, we designed **an interactive web app** that would al
 
 Our app predicts bike-sharing demand in **Berlin, Cologne, and Dresden**, based on **weather forecasts** (*Is it cold and rainy or sunny and warm?*), **time** (*Is it the dead of night or a busy commuting hour?*) and **calendar** factors (*Is it July or December? It is a working day or not?*)
 
-Behind our app is **a machine learning model** (CatBoost, see below) trained on historical bike-sharing and weather data. It uses **real-time weather forecasts** to make bike demand predictions, and **a cloud-hosted database** to display different bike demand trends.
+Behind our app is **a machine learning model** (CatBoost, see below) trained on historical bike-sharing and weather data. It uses **real-time weather forecasts** to make bike demand predictions, and **a cloud-hosted database** to display bike demand trends.
 
 <p align="center">
   <img src="images/bikecast_homepage.png" width="80%" alt="App homepage">
