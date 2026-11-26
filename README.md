@@ -17,9 +17,9 @@ The application offers three main features:
 
 **Data Visualization**: Explore how weather, time, location, and calendar factors influence bike-sharing demand.
 
-**Automatic Prediction**: Forecast hourly demand up to five days ahead using weather forecasts retrieved via the OpenWeather API and automatically generated calendar features.
+**Automatic Prediction**: Forecast hourly demand up to five days ahead using weather forecasts retrieved via the OpenWeather API and automatically generated calendar factors.
 
-**Manual Prediction**: Estimate demand for future dates or hypothetical weather and calendar scenarios.
+**Manual Prediction**: Estimate demand for future dates or hypothetical weather and calendar scenarios by manually entering all the predictor factors.
 
 
 ## 📊 Data
@@ -35,13 +35,13 @@ Bike-sharing records were aggregated to hourly demand and enriched with historic
 
 **Predictor factors:**
 - **Location:** City.
-- **Calendar features:** Month, hour of the day, working day (vs. holiday/weekend), and school holidays (Schulferien vs. regular school periods).
-- **Weather features:** Weather conditions (clouds, clear, rain, snow, mist, drizzle or fog), temperature, humidity, wind speed, rainfall and snowfall during the previous hour.
+- **Calendar factors:** Month, hour of the day, working day (vs. holiday/weekend), and school holidays (Schulferien vs. regular school periods).
+- **Weather factors:** Weather conditions (clouds, clear, rain, snow, mist, drizzle or fog), temperature, humidity, wind speed, rainfall and snowfall during the previous hour.
 
 ### Data Sources
 
 - **Bike-Sharing Data:** Historical bike-sharing records obtained from the [European Bike Sharing Dataset](https://github.com/tumftm/european-bike-sharing-dataset)¹.
-- **Weather Data:** Weather records collected using the [OpenWeather Marketplace](https://openweathermap.org/marketplace), including temperature, humidity, wind speed, rainfall, and snowfall.
+- **Weather Data:** Historical weather records collected using the [OpenWeather Marketplace](https://openweathermap.org/marketplace), including temperature, humidity, wind speed, rainfall, and snowfall.
 - **Calendar Data:** Working day information generated using a Python library; school break information taken from the [Schulferien website](https://www.schulferien.org/deutschland/ferien/).
 
 ## 📂 Repository Structure
@@ -85,7 +85,7 @@ Bike-sharing records were aggregated to hourly demand and enriched with historic
 - Scikit-learn
 - MySQL
 - Railway (cloud-hosted MySQL database)
-- OpenWeatherMap API
+- OpenWeather API
 
 
 ## 🔐 Configuration
