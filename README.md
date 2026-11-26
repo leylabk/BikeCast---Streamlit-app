@@ -1,4 +1,4 @@
-# 🚲 BikeCast – Predict Bike-Sharing Demand 
+# 🚲 BikeCast – Forecasting Bike-Sharing Demand 
 
 An end-to-end machine learning project that predicts hourly bike-sharing demand in Berlin, Cologne, and Dresden based on weather, temporal, and calendar factors.
 
@@ -7,6 +7,12 @@ An end-to-end machine learning project that predicts hourly bike-sharing demand 
 Accurate demand forecasting can help bike-sharing providers optimize fleet availability, improve resource allocation, and increase customer satisfaction, thus supporting sustainable urban mobility.
 
 We developed and deployed an interactive web application that combines historical bike-sharing data, machine learning, real-time weather forecast integration, and a cloud-hosted database to support data-driven operational planning.
+
+<p align="center">
+  <img src="images/bikecast_homepage.png" width="80%" alt="App homepage">
+  <br>
+  <em>Figure 1. App homepage.</em>
+</p>
 
 
 ## 🚀 Try the Live App
