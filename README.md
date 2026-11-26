@@ -1,17 +1,30 @@
 # 🚲 BikeCast – Forecasting Bike-Sharing Demand 
 
-An end-to-end machine learning project that predicts hourly bike-sharing demand in Berlin, Cologne, and Dresden based on weather, temporal, and calendar factors.
+Welcome to our machine learning project that predicts hourly bike-sharing demand!  
+
+It covers Berlin, Cologne, and Dresden, and uses weather and calendar information to evaluate how many bikes will be needed on a given day at a given hour.
 
 ## 📌 Project Overview
 
-Accurate demand forecasting can help bike-sharing providers optimize fleet availability, improve resource allocation, and increase customer satisfaction, thus supporting sustainable urban mobility.
+With climate crisis becoming an increasingly urgent issue, it is the right time to think about the ways we can reduce our impact on the environment 🌱
 
-We developed and deployed an interactive web application that combines historical bike-sharing data, machine learning, real-time weather forecast integration, and a cloud-hosted database to support data-driven operational planning.
+**[UN Act Now](https://www.un.org/en/actnow/ten-actions)** lists **biking** among 10 things that each of us can do to move towards this goal, but biking does come with its difficulties:               
+A comfortable bike is quite expensive, it might get stolen, and it might require some technical skills should anything break down. Not to mention a miserable biking experience in the rain 🌧️
+
+**Bike-sharing companies** help us with many of these difficulties: A shared bike does not require a big one-time investment, it does not get stolen from you personally, and you don't need to worry about its maintenance. Rain is still gonna be there though! 
+
+What can be really annoying about a bike-sharing service, however, is when you really need a bike but so do all of your neighbours - and there are **no free bikes available**.
+
+To help solve this problem, we designed **an interactive web app** that would allow **bike-sharing companies** to **predict the demand** and prepare enough bikes, so that their customers do not get stranded.
+
+Our app predicts bike-sharing demand in **Berlin, Cologne, and Dresden**, based on **weather forecasts** (*Is it cold and rainy or sunny and warm?*), **time** (*Is it the dead of night or a busy commuting hour?*) and **calendar** factors (*Is it July or December? It is a working day or not?*)
+
+Behind our app is **a machine learning model** (CatBoost, see below) trained on historical bike-sharing and weather data. It uses **real-time weather forecasts** to make bike demand predictions, and **a cloud-hosted database** to display different bike demand trends.
 
 <p align="center">
   <img src="images/bikecast_homepage.png" width="80%" alt="App homepage">
   <br>
-  <em>Figure 1. App homepage.</em>
+  <em>App homepage</em>
 </p>
 
 
@@ -25,30 +38,30 @@ The application offers three main features:
 
 **Automatic Prediction**: Forecast hourly demand up to five days ahead using weather forecasts retrieved via the OpenWeather API and automatically generated calendar factors.
 
-**Manual Prediction**: Estimate demand for future dates or hypothetical weather and calendar scenarios by manually entering all the predictor factors.
+**Manual Prediction**: Estimate demand for future dates or hypothetical weather and calendar scenarios by manually entering all the predictor factors yourself.
 
 
 ## 📊 Data
 
 ### Dataset
 
-The model was trained on historical bike-sharing records from Berlin, Cologne, and Dresden covering August 2022 – July 2023, with 1.2 to 2.5 million trips per city.
+We trained our machine learning model on historical bike-sharing records from Berlin, Cologne, and Dresden covering August 2022 – July 2023, with 1.2 to 2.5 million trips per city.
 
-Bike-sharing records were aggregated to hourly demand and enriched with historical weather and calendar data, resulting in a modeling dataset of approximately 22,000 observations.
+We aggregated the records of individual bike-sharing trips to hourly bike demand, and added historical weather and calendar data to each hour. This resulted in a modeling dataset of ≈22,000 observations.
 
 **Target of prediction:**
-- Number of bike-sharing trips started per hour.
+- **Shared bike trips**: Number of bike-sharing trips started per hour. It represents the demand for ready-to-use bikes that a company needs to prepare.
 
 **Predictor factors:**
 - **Location:** City.
-- **Calendar factors:** Month, hour of the day, working day (vs. holiday/weekend), and school holidays (Schulferien vs. regular school periods).
-- **Weather factors:** Weather conditions (clouds, clear, rain, snow, mist, drizzle or fog), temperature, humidity, wind speed, rainfall and snowfall during the previous hour.
+- **Calendar factors:** Month, hour of the day, working day (vs. holiday/weekend), and school holidays (*Schulferien* vs. regular school periods).
+- **Weather factors:** Weather conditions (clouds, clear, rain, snow, mist, drizzle or fog), temperature, humidity, wind speed, amount of rainfall and snowfall during the previous hour.
 
 ### Data Sources
 
 - **Bike-Sharing Data:** Historical bike-sharing records obtained from the [European Bike Sharing Dataset](https://github.com/tumftm/european-bike-sharing-dataset)¹.
 - **Weather Data:** Historical weather records collected using the [OpenWeather Marketplace](https://openweathermap.org/marketplace), including temperature, humidity, wind speed, rainfall, and snowfall.
-- **Calendar Data:** Working day information generated using a Python library; school break information taken from the [Schulferien website](https://www.schulferien.org/deutschland/ferien/).
+- **Calendar Data:** Working day information generated using `holidays` library in Python; school break information taken from the [Schulferien website](https://www.schulferien.org/deutschland/ferien/).
 
 ## 📂 Repository Structure
 
