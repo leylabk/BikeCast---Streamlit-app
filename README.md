@@ -165,13 +165,16 @@ This project was developed collaboratively, combining data engineering, machine 
 
 ## 📚 Data Attribution
 
-Historical bike-sharing data: Waldner et al. (2025), *Data-Driven Insights into (E-)Bike-Sharing*, Transportation. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+**Historical bike-sharing data**: Waldner et al. (2025), *Data-Driven Insights into (E-)Bike-Sharing*, Transportation. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-Weather data: [OpenWeather](https://openweathermap.org/).
+**Weather data**: [OpenWeather](https://openweathermap.org/).
 Historical weather data were used for model training, while live 
 weather forecasts are retrieved via the OpenWeather API for 
 automatic demand predictions.
 
+<a href="https://openweathermap.org/">
+  <img src="images/openweather_logo.png" width="150" alt="OpenWeather">
+</a>
 
 
 
