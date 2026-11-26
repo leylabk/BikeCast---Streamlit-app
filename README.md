@@ -15,7 +15,7 @@ We developed and deployed an interactive web application that combines historica
 </p>
 
 
-## 🚀 Try the Live App
+## 🚀 Try Our Live App
 
 👉 **[Click here to explore BikeCast](https://bikecast-app.streamlit.app/)**
 
