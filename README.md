@@ -63,6 +63,26 @@ We aggregated the records of individual bike-sharing trips to hourly bike demand
 - **Weather Data:** Historical weather records collected using the [OpenWeather Marketplace](https://openweathermap.org/marketplace), including temperature, humidity, wind speed, rainfall, and snowfall.
 - **Calendar Data:** Working day information generated using `holidays` library in Python; school break information taken from the [Schulferien website](https://www.schulferien.org/deutschland/ferien/).
 
+## 🤖 Machine Learning & Model Performance
+
+The final model uses **CatBoost**, a gradient boosting algorithm, to capture complex non-linear relationships between bike-sharing demand and the predictor factors.
+
+The model was evaluated on unseen historical data.
+
+| Metric                            | Score |
+| --------------------------------- | ----- |
+| R² (coefficient of determination) | 0.93  |
+
+The model explains **93% of the variance in hourly bike-sharing demand** in the evaluation dataset. This means it captures most of the patterns behind why the number of bike rentals changes from one hour to another. The remaining 7% may be influenced by other factors that are not included in our model.
+
+Before selecting our final model, we tested 6 other ones - you can see their results below. A more detailed overview of the model selection process (including hyperparameter tuning) can be found in *Data_Processing_and_Modelling* > *predictive_modelling.ipynb*.
+
+<p align="center">
+  <img src="images/model_comparison.png" width="80%" alt="App homepage">
+  <br>
+  <em>ML model comparison</em>
+</p>
+
 ## 📂 Repository Structure
 
 ```text
