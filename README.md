@@ -78,7 +78,7 @@ The model explains **93% of the variance in hourly bike-sharing demand** in the 
 Before selecting our final model, we tested 6 other ones - you can see their results below. A more detailed overview of the model selection process (including hyperparameter tuning) can be found in *Data_Processing_and_Modelling* > *predictive_modelling.ipynb*.
 
 <p align="center">
-  <img src="images/model_comparison.png" width="80%" alt="App homepage">
+  <img src="images/model_comparison.png" width="55%" alt="App homepage">
   <br>
   <em>ML model comparison</em>
 </p>
