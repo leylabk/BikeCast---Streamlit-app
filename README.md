@@ -28,7 +28,7 @@ Behind our app is **a machine learning model** (CatBoost, see below) trained on 
 </p>
 
 
-## 🚀 Try Our Live App
+## 🚀 Try Our Web App
 
 👉 **[Click here to explore BikeCast](https://bikecast-app.streamlit.app/)**
 
@@ -36,9 +36,9 @@ The application offers three main features:
 
 **Data Visualization**: Explore how weather, time, location, and calendar factors influence bike-sharing demand.
 
-**Automatic Prediction**: Forecast hourly demand up to five days ahead using weather forecasts retrieved via the OpenWeather API and automatically generated calendar factors.
+**Automatic Prediction**: Predict hourly demand up to five days ahead using weather forecasts retrieved via the OpenWeather API and automatically generated calendar factors.
 
-**Manual Prediction**: Estimate demand for future dates or hypothetical weather and calendar scenarios by manually entering all the predictor factors yourself.
+**Manual Prediction**: Predict hourly demand for future dates or hypothetical weather and calendar scenarios by manually entering all the factors yourself.
 
 
 ## 📊 Data
