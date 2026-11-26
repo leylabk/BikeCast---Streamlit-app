@@ -140,6 +140,7 @@ Contains screenshots and visualizations used in the README.
 | --- | --- |
 | `bikecast_homepage.png` | Screenshot of the application homepage |
 | `model_comparison.png` | Visualization of machine learning model performance |
+| `openweather_logo.png` | OpenWeather logo for data attribution |
 | `.gitkeep` | Git directory placeholder |
 
 ### Root Directory
